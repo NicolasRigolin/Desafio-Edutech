@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contato desafio edutech</title>
+    <link rel="stylesheet" href="css-contato/reset.css">
+    <link rel="stylesheet" href="css-contato/cabecalho.css">
+    <link rel="stylesheet" href="css-contato/forms.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="javas/script.js"></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="flex-pai">
+            <div class="flex-filho1">
+                <h1 class="titulo">Progama Edutech</h1>
+                <p class="subtitulo">Entre em contato conosco para mais informações.</p>
+            </div>
+            <div class="flex-filho2">
+                <i class="material-icons" id="tamanhoLogo">travel_explore</i> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="ordem">
+            <form action="contato" method="post" onSubmit="return ( verifica() )" name="frmEnvia">
+                <div class="sub-ordem">
+                    <label for="name">Nome</label>
+                    <input name="name" id="nome" type="text" class="forms"> 
+              
+                    <label for="telefone">Telefone</label>
+                    <input name="telefone" id="telefone" type="tel" class="forms">
+                    
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" class="forms">
+                    
+                    <label for="recado">Deixe um comentário</label>
+                    <input type="text" name="recado" title="adicione algum comentário" class="forms-opcional">
+                    
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </div>
+            </form> 
+        </div>    
+    </main>
+</body>
+</html>
