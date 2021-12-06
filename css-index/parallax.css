@@ -1,0 +1,189 @@
+/*importando algumas fontes do google*/
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+
+/*definindo as propriedades da div que está acima de todas, 
+estilizando o titulo de vantagens e definindo o posicionamento 
+dos circulos de imagens*/
+.page{
+  margin: 0 auto;
+  width: 920px;
+}
+.Beneficios{
+  text-align: center;
+  font-size: 35px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #008000;
+  text-decoration: underline #00BFFF;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.content{
+  width: 33.33%;
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+  height: 80vh;
+  max-width: 300px;
+}
+/*definindo as propriedades de animações do circulo da imagem 
+e seus posicionamentos*/
+.circle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  width: 200px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.circle_inner__layer{
+  width: 600px;
+  height: 200px;
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+.circle_inner__layer .img{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.circle:hover .circle_shine{
+  top: 330px;
+  left: -200px;
+}
+.circle_shine{
+  background: white;
+  width: 600px;
+  transition: 0.3s;
+  height: 200px;
+  opacity: 0.2;
+  top: -10px;
+  left: -90px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 2;
+}
+/*colocando a sombra verde do circulo e definindo as animações dos textos*/
+.circle:hover .content_shadow{
+  box-shadow: 0px 31px 19px -2px #00FF7F;
+  transform: scale(1.1);
+  top: -22px;
+}
+.circle:hover .titulo{
+  opacity: 1;
+  top: -36px;
+  transition: all 0.2s;
+}
+.circle:hover .subtitulo{
+  opacity: 1;
+  top: -36px;
+  transition: all 0.2s 0.04s;
+}
+/*definindo o comportamento dos circulos durante a animação dos textos*/
+.circle .circle_inner__layer:nth-of-type(1){
+  top: 0px;
+  left: 0px;
+}
+.circle .circle_inner__layer:nth-of-type(2){
+  top: 0px;
+  left: -210px;
+}
+.circle .circle_inner__layer:nth-of-type(3){
+  top: 0px;
+  left: -440px;
+}
+/*estilizando os textos e fazendo a animação das imagens
+enquanto o circulo abre em um quadrado*/
+.circle_title{
+  text-align: center;
+}
+.circle_title .titulo,
+.circle_title .subtitulo{
+  font-family: "Nunito", sans-serif;
+  opacity: 0;
+  color:  #6495ED;
+  text-shadow: 1px 1px 2px #191970;
+  margin: 0;
+  transition: all 0.2s 0.04s;
+  position: relative;
+  top: -10px;
+}
+.circle_title .subtitulo{
+  transition: all 0.2s;
+  text-shadow: none;
+  color: #3CB371;
+  font-size: 17px;
+}
+.circle_inner{
+  border-radius: 200px;
+  background: #b0d5d6;
+  overflow: hidden;
+  margin: auto;
+  width: 200px;
+  z-index: 1;
+  transition: all 0.3s;
+  height: 200px;
+  position: relative;
+}
+.circle_inner:hover{
+  border: 1px solid #000080;
+  border-radius: 15px;
+  transform: scale(1.1);
+}
+.circle_inner:hover .circle_inner__layer:nth-of-type(1){
+  left: -80px;
+  transition: all 4s linear;
+}
+ .circle_inner:hover .circle_inner__layer:nth-of-type(2){
+  left: -400px;
+  transition: all 4s linear;
+}
+.circle_inner:hover .circle_inner__layer:nth-of-type(3){
+  left: -140px;
+  transition: all 4s linear;
+}
+.content_shadow{
+  width: 200px;
+  box-shadow: 0px 31px 19px -2px #e0e8f9;
+  height: 20px;
+  border-radius: 70%;
+  position: relative;
+  top: -44px;
+  transition: all 0.3s;
+  z-index: 0;
+}
+/*definindo a posiçaõ deles no mobile*/
+@media screen and (max-width: 748px){
+  /*organizando os circulos um em baixo do outro*/
+  .layout{
+    display: flex;
+    flex-flow: column, wrap;
+    height: auto;
+    width: auto;
+  }
+  .item-circle{
+    display: flex;
+    height: 90vh;
+    width: auto;
+  }
+  /*atualizando o estilo do titulo de vantagens 
+  e dos textos dos circulos para o mobile*/
+  .Beneficios{
+    font-size: 35px;
+    text-shadow: 1.5px 1.5px 2px #008000;
+  }
+  .circle_title .titulo{
+    font-size: 35px;
+    text-shadow: 1.5px 1.5px 2px #191970;
+  }
+  .circle_title .subtitulo{
+    text-shadow: 0.5px 0.5px 1px #008000;
+    color: #b0d5d6;
+    font-size: 25px;
+  }
+
+}   

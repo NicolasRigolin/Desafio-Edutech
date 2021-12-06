@@ -1,0 +1,20 @@
+/*definindo o tamanho e o estilo do rodapé do site*/
+.rodape{
+	background: linear-gradient(#008000, #32CD32);
+	height: 50px;
+	text-align: center;
+	width: auto;
+}
+.copyright{
+	/*estilizando o copyright*/
+	font-size: 25px;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 2px #00BFFF;
+}
+@media screen and (max-width: 748px){
+	/*diminuindo o tamanho do copyright no mobile*/
+	.copyright{
+		font-size: 20px;
+		text-shadow: 0.5px 0.5px 1px #00BFFF;
+	}
+}

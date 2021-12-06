@@ -1,0 +1,70 @@
+/*decorando o titulo e a breve explicação das trilhas de estudos*/
+.Trilhas{
+	font-size: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 1.5px 1.5px 2px #008000;
+	text-decoration: underline #00BFFF;
+}
+.Trilhas-sinopse{
+  	font-size: 25px;
+  	text-align: center;
+}
+.aspas{
+	font-size: 35px;
+	color: #000080;
+	text-shadow: 1px 1px 2px  #00008B;
+}
+/*alinhando os cards com flex e colocando a borda darkgreen neles*/
+.chefe{
+	display: flex;
+	justify-content: space-around;
+}
+.col{
+	width: 35vw;
+	height: auto;
+}
+.card{
+	width: 35vw;
+	height: auto;
+	border: 1px solid #006400;
+}
+/*estilizando os textos dos cards*/
+.card-title{
+	color: #00008B;
+	text-shadow: 0.5px 0.5px 1px #191970;
+}
+.card-text{
+	color: #808080;
+	text-shadow: 0.2px 0.2px 0.7px #32CD32;
+}
+/*colocando um background na imagem do card da 1ª Serie*/
+.img-bg{
+	background: #3CB371;
+}
+/*alinhando os cards para o mobile*/
+@media screen and (max-width: 748px){
+	/*definindo a posiçaõ de 1 card em baixo do outro ocupando a tela inteira do mobile*/
+	.card{
+		width: auto;
+	}
+	.chefe{
+		display: flex;
+		flex-flow: column, wrap;
+		height: auto;
+		width: auto;
+	}
+	.col{
+		display: flex;
+		height: auto;
+		width: auto;
+	}
+	.Trilhas{
+		font-size: 35px;
+		width: auto;
+	}
+	/*tirando a breve explicação da parte mobile*/
+	.Trilhas-sinopse{
+		display: none;
+	}
+}

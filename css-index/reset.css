@@ -1,0 +1,11 @@
+/*definindo o reset do browser da página principal*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*alterando o fundo do main para um cinza*/
+.conteudo{
+	background: #D3D3D3;
+}

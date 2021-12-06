@@ -1,0 +1,76 @@
+/*estilizando e definindo o tamanho do cabeçalho e do logo */
+.cabecalho{
+	background: linear-gradient(#008000, #32CD32);
+	height: auto;
+}
+.logo{
+	height: 12vh;
+	width: 10vw;
+	border: 2px solid #6495ED;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+}
+/*adicionado todos os efeitos dos links*/
+.link{
+	color: #FFFFFF;
+	font-family: 'El Messiri', sans-serif;
+	font-size: 25px;
+	text-decoration: none; 
+}
+.link:hover{
+	color: #FFFFFF;
+	font-size: 27px;
+	transition: 0.7s;
+	text-decoration: underline #0000FF;
+	text-shadow: 1px 1px 1px #0000FF;
+}
+.link-nav{
+	color: #FFFFFF;
+	font-size: 22px;
+	text-decoration: none;
+	font-family: 'El Messiri', sans-serif;
+	cursor: pointer;
+}
+.link-nav:hover{
+	color: #FFFFFF;
+	transition: 0.3s;
+	text-decoration: underline #0000FF;
+	text-shadow: 1px 1px 1px #0000FF;
+	cursor: pointer;
+}
+.nav-item{
+	display: flex;
+	align-items: center;
+	padding-left: 1rem;
+}
+/*ajeitando tudo para o mobile*/
+@media screen and (max-width: 748px){
+	/*atualizando os estilos dos links*/
+	.link{
+		text-decoration: underline #0000FF;
+		font-family: 'El Messiri', sans-serif;
+		font-size: 30px;
+		text-shadow: 1px 1px 1px #0000FF;
+	}
+	.link:hover{
+		font-size: 35px;
+		text-shadow: 1.5px 1.5px 2px #0000FF;
+	}
+	.link-nav{
+		text-decoration: underline #0000FF;
+		text-shadow: 0.5px 0.5px 1px #0000FF;
+		font-size: 27px;
+		font-family: 'El Messiri', sans-serif;
+	}
+	.nav{
+		display: flex;
+		flex-direction: column;
+	}
+	.logo{
+		/*troquei para outra imagem do mesmo logo para não ficar retorcida*/
+		image-rendering: url(imgs/logo-edutech2.png)
+		height: 20vh;
+		width: 18vw;
+	}
+}

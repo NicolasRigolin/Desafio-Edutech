@@ -1,0 +1,25 @@
+/*definindo o tamanho do carrossel e das imagens*/
+.carrossel{
+	padding-top: 10px;
+	width: auto;
+}
+.carrossel-img{
+	height: 80vh;
+}
+/*definindo o estilo dos textos do carrossel*/
+.text-carrosel1{
+	font-size: 30px;
+	color: #DCDCDC;
+	text-shadow: 3px 3px 4px #006400;
+	text-decoration: 3px underline #00BFFF;
+}
+.text-carrosel2{
+	font-size: 20px;
+	text-shadow: 1.4px 1.4px 2px #00008B;
+}
+/*tirando o carrosel da parte mobile*/
+@media screen and (max-width: 748px){
+	#carouselExampleCaptions{
+		display: none;
+	}
+}
