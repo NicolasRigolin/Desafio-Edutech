@@ -1,0 +1,46 @@
+/*organizando os inputs um em baixo do outro com flex*/
+.ordem{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+}
+.sub-ordem{
+    display: flex;
+    flex-direction: column;
+}
+/*definindo o estilo dos inputs e do botão*/
+.forms{ 
+    border: 1px solid gray;
+    width: 21vw;
+    height: 2vw;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+.forms-opcional{ 
+    border: 1px solid gray;
+    width: 21vw;
+    height: 2vw;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+#enviar{
+    background-color: #32CD32;
+    color: #FFFFFF;
+    border-bottom: 5px solid #006400;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+/*alinhando no mobile*/
+@media screen and (max-width: 748px){
+    .forms{
+        width: 30vw;
+        height: 3vw;
+        margin-bottom: 20px;
+    }
+    .forms-opcional{
+        width: 30vw;
+        height: 3vw;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+.cabecalho{
+    /*cor e tamanho do cabeçalho*/
+    background: linear-gradient(#008000, #32CD32);
+    height: 200px;
+    text-align: center;
+}
+/*parte de alinhamento entre os titulos do cabeçalho e o logo com o flex */
+.flex-pai{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-filho1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+   
+}
+.flex-filho2{
+    display: flex;
+    margin-top: 5vw; 
+}
+/*estilizando os titulos e a logo*/
+#tamanhoLogo{
+    font-size: 64px;
+    cursor: default;
+    background-color: white ;
+    color: #32CD32;
+    border: 5px solid white;
+    padding: 10px;
+    border-radius: 100px;
+}
+.titulo{
+    color: #FFFFFF;
+    cursor: default;
+    text-align: center; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #6495ED;
+}
+.subtitulo{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-align: center; 
+    cursor: default;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px #6495ED;
+}
+/*colocando no tamanho responsivo*/
+@media screen and (max-width: 748px){
+    .cabecalho{
+        height: 165px;
+    }
+    #tamanhoLogo{
+        font-size: 56px;
+    }
+}
